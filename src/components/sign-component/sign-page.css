@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3a1c57, #4229b4, #9a29ce, #d18e12, #a7a89e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.sign-component {
+  background: rgba(255, 255, 255, 0.658);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 2rem; 
+  border-radius: 12px; 
+  width: 30vw; 
+  text-align: center;
+}
+
+.header {
+  color: #000000dc;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.user-name, .user-email, .user-password, .user-profile-pic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem; 
+}
+
+.user-name img, .user-email img, .user-password img {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 0.75rem; 
+}
+
+.user-name input, .user-email input, .user-password input {
+  width: 100%;
+  padding: 0.75rem; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+}
+
+.user-profile-pic input[type="file"] {
+  display: none;
+}
+
+.labelStyle {
+  display: inline-block;
+  padding: 0.75rem; 
+  cursor: pointer;
+  background: rgba(247, 245, 245, 0.116);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  border-radius: 16px; 
+  color: black;
+  border: none;
+  margin: 0.75rem 0; 
+  transition: background-color 0.3s;
+}
+
+.labelStyle:hover {
+  background: rgb(56, 56, 56);
+  color: white;
+}
+
+.buttons {
+  margin-top: 1.5rem; 
+  display: grid;
+}
+
+.buttons button {
+  background: rgba(247, 245, 245, 0.116);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background: rgb(56, 56, 56);
+  color: white;
+}
+
+.chosenBtn {
+  background: black;
+  color: white;
+}
+
+.buttons button.active {
+  background-color: #000; 
+  color: white;
+}
+
+.forgot-password {
+  display: flex;
+  font-size: 0.875rem; 
+  margin-top: 1rem; 
+  color: #000; 
+  text-align: center; 
+}
